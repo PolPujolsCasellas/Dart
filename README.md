@@ -1,12 +1,12 @@
-What is Dart?
+# **What is Dart?**
 
-Dart is an *object-oriented programming language* developed by Google. Whilst technically not restricted, it’s primarily used for creating *frontend user interfaces* for the web (with AngularDart or Flutter for Web) and mobile apps (Flutter).
+Dart is an **object-oriented programming language** developed by Google. Whilst technically not restricted, it’s primarily used for creating **frontend user interfaces** for the web (with AngularDart or Flutter for Web) and mobile apps (Flutter).
 
 It’s under active development, compiled to native machine code (when used for building mobile apps), inspired by modern features of other programming languages (mainly Java, JavaScript, C#) and strongly typed.
 
 As already mentioned, Dart is a compiled language. That means, that your code isn’t executed like you write it, but instead, a compiler parses + transform it (to machine code).
 
-What are "Types"?
+## **What are "Types"?**
 
 Not all programming languages are strongly typed - but Dart is. What does that mean though?
 
