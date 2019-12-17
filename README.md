@@ -2,7 +2,7 @@
 
 Dart is an **object-oriented programming language** developed by Google. Whilst technically not restricted, it’s primarily used for creating **frontend user interfaces** for the web (with AngularDart or Flutter for Web) and mobile apps (Flutter).
 
-It’s under active development, compiled to native machine code (when used for building mobile apps), inspired by modern features of other programming languages (mainly Java, JavaScript, C#) and strongly typed.
+It’s under active development, **compiled to native machine code** (when used for building mobile apps), inspired by modern features of other programming languages (mainly Java, JavaScript, C#) and **strongly typed**.
 
 As already mentioned, Dart is a compiled language. That means, that your code isn’t executed like you write it, but instead, a compiler parses + transform it (to machine code).
 
@@ -10,9 +10,9 @@ As already mentioned, Dart is a compiled language. That means, that your code is
 
 Not all programming languages are strongly typed - but Dart is. What does that mean though?
 
-Every value you use in your program (e.g. some user input you're saving) has a type - it could be "text" for example. In Dart (and in pretty much all other programming languages), that would not be called "text" though but "string".
+Every value you use in your program (e.g. some user input you're saving) **has a type** - it could be "text" for example. In Dart (and in pretty much all other programming languages), that would not be called "text" though but "**string**".
 
-On the other hand, if you're working with the age of a user, you might be using a number without any decimal places - a so-called "integer" value. Numbers with decimal places are called "doubles" (or "float" - in other programming languages).
+On the other hand, if you're working with the age of a user, you might be using a **number** without any decimal places - a so-called "**integer**" value. Numbers with decimal places are called "**doubles**" (or "float" - in other programming languages).
 
 These are some basic types - Dart has way more than these basic types though. You will learn way more about these (and all the other important) types throughout the course.
 
@@ -28,27 +28,29 @@ num => The "parent type" of double and int. You should rarely use it - be more s
 
 It's also important to keep in mind that EVERY value in Dart is an object. More on that can be found below (=> "What does "Object-oriented" mean?")
 
-Variables & Functions
+## **Variables & Functions**
 
 In your programs, you typically need to store some values. Not necessarily in a database or in a file but in memory. You might need to store some intermediate result, the input of a user before you process it or some information about your Flutter widget (e.g. "Should it currently be displayed on the screen?").
 
-You store such information (= values) in so-called variables.
+You store such information (= values) in **so-called variables**.
 
 Variables are data containers - they have names and store values of any type.
 
 For example:
 
-var myAge = 30;
+	**var myAge = 30;**
 is a variable that stores an integer (int) of value 30.
 
 The var keyword tells Dart that myAge is a variable. Alternatively to var, you could also use the type name - in addition to informing Dart about the variable, you would then also "inform Dart" about the type of data stored in the variable:
 
-int myAge = 30;
+	**int myAge = 30;**
+
 However, Dart has a feature called "type inference". This means, that Dart is pretty smart about inferring types of values. If you created the variable with var, Dart is still able to infer that myAge is of type int because you initialize the variable (i.e. you assign a value right from the start) with an integer value.
 
 Because of that built-in type inference, it's considered a good practice to NOT explicitly define the type but instead use var when defining variables. Hence this snippet would be preferred:
 
-var myAge = 30;
+	**var myAge = 30;**
+
 That changes if you create a variable without an initial value - then, you should inform Dart about which type of data you plan on saving in there:
 
 int myAge;
